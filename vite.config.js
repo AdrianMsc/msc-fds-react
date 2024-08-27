@@ -4,7 +4,7 @@ import path from "path";
 
 export default defineConfig({
   plugins: [react()],
-  base: "https://adrianmsc.github.io/msc-fds-react/",
+  base: process.env.VITE_BASE_URL || "/",
   resolve: {
     alias: {
       "@assets": path.resolve(__dirname, "./src/assets"),

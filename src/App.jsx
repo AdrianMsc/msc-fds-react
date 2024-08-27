@@ -5,9 +5,9 @@ import NotFound from "./pages/not-found/NotFound";
 
 function App() {
   return (
-    <Router>
+    <Router basename="/msc-fds-react">
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/msc-fds-react/" element={<Home />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </Router>

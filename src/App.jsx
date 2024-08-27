@@ -9,8 +9,6 @@ const basename = import.meta.env.VITE_BASENAME;
 function App() {
   return (
     <Router basename={basename}>
-      {console.log(import.meta.env)}
-
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/home" element={<Home />} />
